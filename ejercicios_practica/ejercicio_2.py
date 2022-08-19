@@ -11,12 +11,23 @@
 
 # Ahora los valores a operar deben ser ingresados por
 # consola con la función "input" como se ve a continuación
+from __future__ import division
+
+
 print('Ingrese por consola el primer número entero a operar:')
 numero_1 = int(input())
 
 print('Ingrese por consola el segundo número entero a operar:')
 numero_2 = int(input())
-
+print('los numeros ingresados son', numero_1 ,'y' , numero_2) 
+suma = numero_1 + numero_2 
+resta = numero_1 - numero_2 
+mult = numero_1 * numero_2
+div = numero_1 / numero_2
+print('resultado de la suma',numero_1 ,'y' , numero_2 ,'es', suma)
+print('resultado de la resta de resta' , numero_1 , 'y' , numero_2 ,'es' , resta)
+print('resultado de la multiplicacion' , numero_1, 'y' , numero_2 ,'es' , mult)
+print('resultado de la  division' , numero_1 , 'y' , numero_2 , 'es' , div)
 # Alumno: Imprima en pantalla los dos números enteros solicitados
 # print(....)
 

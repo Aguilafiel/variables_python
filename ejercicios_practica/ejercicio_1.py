@@ -11,7 +11,9 @@
 
 numero_1 = 5
 numero_2 = 7
-
+suma = numero_1 + numero_2
+operacion = suma
+print('el resultado de la suma entre', numero_1 , 'y', numero_2, 'es', suma) 
 # Realizar la suma de las dos variables
 # numero_1 y numero_2
 # Almacenar el valor de la suma en una variable
@@ -22,3 +24,8 @@ numero_2 = 7
 # print(....)
 
 # Repita el procedimiento para realizar la resta
+numero_1 = 5
+numero_2 = 7
+resta = numero_1 - numero_2
+operacion = resta
+print('resta entre los numeros', numero_1 , 'y', numero_2, 'es',resta )
