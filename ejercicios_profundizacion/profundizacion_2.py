@@ -31,5 +31,17 @@ Finalmente el programa debe imprimir dos líneas de texto por separado
   entienda de que se está hablando.
 '''
 
-print('Sistema de ingreso de datos')
+print('Sistema de ingreso de datos:')
 # Empezar aquí la resolución del ejercicio
+print('ingrese nombre completo:')
+n_completo =str(input())
+print('inrese numero real de DNI:')
+v_dni = int(input())
+print('ingrese edad:')
+v_edad = int(input())
+print('ingrese altura en cm:')
+n_altura = int(input())
+
+print('Datos Ingresados') 
+print('Nombre Completo:', n_completo,'DNI:',v_dni ) 
+print('Edad:', v_edad,'Años' , 'Altura:', n_altura, 'cm')

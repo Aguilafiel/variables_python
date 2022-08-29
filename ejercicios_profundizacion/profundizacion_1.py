@@ -31,3 +31,18 @@ E) Exponente/Potencia
 
 print('¡Nuestra primera calculadora!')
 # Empezar aquí la resolución del ejercicio
+print('ingrese un numero real')
+n_1 = int(input())
+print('ingrese un numero real')
+n_2 = int(input())
+
+suma = n_1 + n_2
+print('el resultado de la suma es:', suma)
+resta = n_1 - n_2
+print('el resultado de la resta es:', resta )
+mult = n_1 * n_2
+print('el resltado de la multiplicacioon es:', mult)
+div = n_1 / n_2 
+print('el resltado de la division es :', div) 
+expo = n_1 ** n_2
+print('el resultado de la potenciacion es:', expo)

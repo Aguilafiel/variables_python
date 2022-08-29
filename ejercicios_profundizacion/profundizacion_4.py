@@ -43,5 +43,16 @@ https://www.pythonforbeginners.com/dictionary/python-split
 Cualquier duda con el método split pueden consultarla por el campus
 '''
 
+
 print('Jugando con texto')
 # Empezar aquí la resolución del ejercicio
+print('ingrese nombre completo del primer padre')
+nombr_1 = str(input())
+print( 'Ingrese nombre completo del segundo padre' )
+nombr_2=  str(input())
+print ('ingrese solo nombre del hijo')
+nombre_hijo = str(input())
+ap_1 = nombr_1.split()
+ap_2 = nombr_2.split()
+n_comp = nombre_hijo.capitalize() + ' ' + ap_1[1].capitalize()+ ' ' + ap_2[1].capitalize()
+print('Nombre completo:' , n_comp)
