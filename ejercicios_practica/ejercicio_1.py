@@ -1,4 +1,4 @@
-# Tipos de variables [Python]
+# Condicionales [Python]
 # Ejercicios de práctica
 
 # Autor: Inove Coding School
@@ -9,23 +9,54 @@
 
 # Ejercicios de práctica numérica
 
-numero_1 = 5
-numero_2 = 7
-suma = numero_1 + numero_2
-operacion = suma
-print('el resultado de la suma entre', numero_1 , 'y', numero_2, 'es', suma) 
-# Realizar la suma de las dos variables
-# numero_1 y numero_2
-# Almacenar el valor de la suma en una variable
-# ej:
-# operacion = .....
 
-# Imprimir en pantalla el resultado de la suma
-# print(....)
 
-# Repita el procedimiento para realizar la resta
-numero_1 = 5
-numero_2 = 7
-resta = numero_1 - numero_2
-operacion = resta
-print('resta entre los numeros', numero_1 , 'y', numero_2, 'es',resta )
+
+# Verifique si el numero_1 es menor a 10 o el numero_2
+# es mayor a -2
+# Imprima en pantalla si se cumple o no la condición
+
+from unicodedata import numeric
+
+
+# Comparadores
+# Ingrese dos números cualesquiera y realice las sigueintes
+# comparaciones entre ellos
+
+
+numero_1 = int(input('Ingrese el primer número:\n'))
+
+numero_2 = int(input('Ingrese el segundo número:\n'))
+
+
+# Verifique si el numero_1 positivo, negativo o cero
+# Imprima el resultado en cada caso
+
+if numero_1 < 0:
+    print(numero_1 , 'es negativo ')
+elif numero_1 > 0:
+    print(numero_1 , 'es positivo')
+else: 
+    print('primer numero es igual a 0')
+
+if numero_2 < 0:
+    print(numero_2 , 'es negativo ')
+elif numero_2 > 0:
+    print(numero_2 , 'es positivo')
+else: 
+    print('primer numero es igual a 0')
+
+# Verifique si el numero_1 es mayor a 0 y menor a 100
+# Imprima en pantalla si se cumple o no la condición 
+if numero_1 > 0 and numero_1 < 100:
+    print(numero_1 ,'Se encuentra en el rango entre 0 y 100' )
+else:
+    print(numero_1 , 'No se encuentra dentro del rango entre 0 y 100')
+
+# Compare cual de los dos números es mayor
+# Imprima en pantalla según corresponda
+
+if numero_1 > numero_2:
+    print(numero_1 , 'es mayor que' , numero_2)
+else:
+    print(numero_2 , 'es mayor que' , numero_1)
