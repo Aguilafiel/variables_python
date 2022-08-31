@@ -1,4 +1,4 @@
-# Tipos de variables [Python]
+# Condicionales [Python]
 # Ejercicios de profundización
 
 # Autor: Inove Coding School
@@ -12,34 +12,49 @@
 
 # IMPORTANTE: NO borrar los comentarios en VERDE o NARANJA
 
-# Ejercicios de práctica con cadenas
+# Ejercicios de práctica con números
 '''
 Enunciado:
-Realice un programa que reciba por consola su nombre completo
-e imprima en pantalla su nombre en los siguientes formatos:
-- Todas las letras en minúsculas
-- Todas las letras en mayúsculas
-- Solo la primera letra del nombre en mayúscula
+Realice un programa que solicite ingresar tres valores de temperatura
+De las temperaturas ingresadas por consola determinar:
+1 - ¿Cuáles de ellas es la máxima temperatura ingresada?
+2 - ¿Cuáles de ellas es la mínima temperatura ingresada?
+3 - ¿Cuál es el promedio de las temperaturas ingresadas?
 
-NOTA: Para realizar este ejercicio deberá usar los siguientes métodos
-de strings:
-- lower
-- upper
-- capitalize
+En cada caso imprimir en pantalla el resultado
 
-Puede buscar en internet como usar en Python estos métodos.
-Les dejamos el siguiente link que posee casos de uso de algunos de ellos:
-
-Link de referencia:
-https://www.geeksforgeeks.org/isupper-islower-lower-upper-python-applications/
-
-Cualquier duda con estos métodos pueden consultarla por el campus
+IMPORTANTE: Para ordenar las temperatuas debe utilizar condicionales compuestos o anidados,
+no se busca utilizar bucles o algoritmos de ordenamiento ya que aún no hemos llegado a ese
+contenido. Recomendamos pensar bien este problema de lógica con un lápiz y papel.
 '''
 
-print('Ahora si! buena suerte')
+from ctypes.wintypes import PINT
+
+
+print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
-print('Ingrese su nombre completo')
-nombre_c = str(input())
-print(nombre_c.lower())
-print(nombre_c.upper())
-print(nombre_c.capitalize())
+print('ingrese temperatura 1')
+temp_1 = int(input())
+print('ingrese temperatura N.2')
+temp_2 = int(input()) 
+print('ingrese temperatura N.3')
+temp_3 = int(input())
+
+if temp_1 > temp_2 and temp_1 > temp_3:
+    print(temp_1 , ' es la maxima temperatura ')
+elif temp_2 > temp_1 and temp_2 > temp_3:
+    print( temp_2 , 'es la maxima temperatura')
+else:
+    print(temp_3 , 'es la temperatura maxima')
+
+if temp_1 < temp_2 and  temp_1 < temp_3:
+    print( temp_1, 'es la temperatura minima')
+elif temp_2 < temp_1 and temp_2 < temp_3:
+    print(temp_2 , 'es la temperatura minima')
+else:
+     print(temp_3, 'es la temperatura minima')
+
+
+suma = temp_1 + temp_2 + temp_3
+promedio = suma / 3
+print( 'el promedio de temperatura es:', promedio) 

@@ -1,4 +1,4 @@
-# Tipos de variables [Python]
+# Condicionales [Python]
 # Ejercicios de profundización
 
 # Autor: Inove Coding School
@@ -12,36 +12,36 @@
 
 # IMPORTANTE: NO borrar los comentarios en VERDE o NARANJA
 
-# Ejercicios de práctica numérica y cadenas
+# Ejercicios de práctica con números
 '''
 Enunciado:
-Realice un programa que consulte por consola:
-- El nombre completo de la persona
-- El DNI de la persona
-- La edad de la persona
-- La altura de la persona
-
-Finalmente el programa debe imprimir dos líneas de texto por separado
-- En una línea imprimir el nombre completo y el DNI, aclarando de que
-  campo se trata cada uno
-        Ej: Nombre Completo: Nombre Apellido , DNI:35205070,
-- En la segunda línea se debe imprimir el nombre completo, edad y
-  altura de la persona
-  Nuevamente debe aclarar el campo de cada uno, para el que lo lea
-  entienda de que se está hablando.
+Realice un programa que solicite el ingreso de tres números
+enteros, y luego en cada caso informe si el número es par
+o impar.
+Para cada caso imprimir el resultado en pantalla.
 '''
 
-print('Sistema de ingreso de datos:')
-# Empezar aquí la resolución del ejercicio
-print('ingrese nombre completo:')
-n_completo =str(input())
-print('inrese numero real de DNI:')
-v_dni = int(input())
-print('ingrese edad:')
-v_edad = int(input())
-print('ingrese altura en cm:')
-n_altura = int(input())
 
-print('Datos Ingresados') 
-print('Nombre Completo:', n_completo,'DNI:',v_dni ) 
-print('Edad:', v_edad,'Años' , 'Altura:', n_altura, 'cm')
+print('Ejercicios de práctica con números')
+# Empezar aquí la resolución del ejercicio
+print('ingrese un numero')
+num_1 = int(input())
+print('ingrese segundo numero')
+nume_2 = int(input())
+print('ingrese tercer numero')
+num_3 = int(input())
+
+if (num_1 % 2) == 0:
+    print('numero 1 es par')
+else:
+    print('numero 1 es impar')
+
+if (nume_2 % 2) == 0:
+    print('numero 2 es par')
+else:
+    print('numero 2 es impar')
+
+if (num_3 % 2) == 0:
+    print('numero 3 es par')
+else:
+    print('numero 3 es impar')
