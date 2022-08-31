@@ -1,4 +1,4 @@
-# Condicionales [Python]
+# Tipos de variables [Python]
 # Ejercicios de profundización
 
 # Autor: Inove Coding School
@@ -15,25 +15,34 @@
 # Ejercicios de práctica con números
 '''
 Enunciado:
-Realice un programa que solicite por consola 2 números
-Calcule la diferencia entre ellos e informe por pantalla
-si el resultado es positivo, negativo o cero.
+Realice un calculadora, se ingresará por línea de comando dos
+números reales y se deberá calcular todas las operaciones entre ellos:
+A) Suma
+B) Resta
+C) Multiplicación
+D) División
+E) Exponente/Potencia
+
+- Para todos los casos se debe imprimir en pantalla el resultado aclarando
+  la operación realizada en cada caso y con que números
+  se ha realizado la operación
+  ej: La suma entre 4.2 y 6.5 es 10.7
 '''
 
-from cgi import print_environ
-
-
-print('Ejercicios de práctica con números')
+print('¡Nuestra primera calculadora!')
 # Empezar aquí la resolución del ejercicio
-print( 'ingrese un numero')
-num_1 = int(input()) 
-print('ingrese segundo numero')
-num_2 = int( input()) 
+print('ingrese un numero real')
+n_1 = int(input())
+print('ingrese un numero real')
+n_2 = int(input())
 
-resta = num_1 - num_2
-if resta > 0:
-    print( resta , 'es positivo')
-elif resta < 0:
-    print(resta, ' es negativo')
-else :
-    print( 'el resultado es igual a 0')
+suma = n_1 + n_2
+print('el resultado de la suma es:', suma)
+resta = n_1 - n_2
+print('el resultado de la resta es:', resta )
+mult = n_1 * n_2
+print('el resltado de la multiplicacioon es:', mult)
+div = n_1 / n_2 
+print('el resltado de la division es :', div) 
+expo = n_1 ** n_2
+print('el resultado de la potenciacion es:', expo)
