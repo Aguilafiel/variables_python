@@ -1,4 +1,4 @@
-# Condicionales [Python]
+# Tipos de variables [Python]
 # Ejercicios de práctica
 
 # Autor: Inove Coding School
@@ -9,45 +9,20 @@
 
 # Ejemplos variables de texto
 
-from ast import keyword
-from itertools import count
-import numbers
+# Ingrese tres palabras y arme un acrónimo con ellas
+# Si desea puede modificar el código para ingresar más palabras
+print('Ingrese palabra 1:')
+palabra_1 = str(input())
 
+print('Ingrese palabra 2:')
+palabra_2 = str(input())
 
-texto_1 = '5'
-texto_2 = '7'
+print('Ingrese palabra 3:')
+palabra_3 = str(input())
 
-if texto_1 > texto_2:
-    print('la palabra 1 es mas larga que la palabra 2')
-else:
-    print('la palabra 2 es mayor que la palabra 1')
-    # 1-Verifique cual de los dos textos es mayor alfabéticamente
-# La comparación alfabética es aquella que se logra cuando
-# se utiliza el operador mayor o menor con Strings (textos)
-# Imprima en pantalla según corresponda
-
-# 2-Transforma esas variables tipo texto en variables numéricas con (int)
-# y almacénalas en nuevas variables.
-# Compare las nuevas variables para ver cual es mayor o menor
-# utilizando los operadores correspondientes
-# ¿Cuál de las nuevas variables es mayor?
-# Imprima en pantalla según corresponda
-
-num_1 = int(texto_1)
-num_2 = int(texto_2)
-if num_1 > num_2:
-    print('el numero 1 es mayor que el numero 2')
-else:
-    print('el numero 2 es mayor que el numero 1')
-
-# Para pensar!
-# ¿Por qué cree que texto_2 es mayor a texto_1?
-# Siendo números tiene sentido, pero son caracteres, texto,
-# aún así el operador arroja el mismo resultado que con las
-# variables numéricas, cierto? ¿Por qué creen que es así?
-
-# respuesta : esto es por el valor de cada caracter en la tabla ASCII 
-
-# Esta pregunta estará repetida en el Campus para que puedan
-# responder.
-# NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
+acronimo = palabra_1[0] + palabra_2[0] + palabra_3[0]
+print('acronimo:', acronimo) 
+  
+# De cada palabra debe tomar la primera letra y armar el acrónimo
+# Ejemplo: Alumbrado, barrido y limpieza --> ABL
+# Imprimir el resultado en pantalla
